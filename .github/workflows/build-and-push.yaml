@@ -13,7 +13,7 @@ env:
 
 jobs:
   build-and-deploy:
-    name: Deploy version to argoCD
+    name: Build and Push Docker Image
     runs-on: ubuntu-latest
     timeout-minutes: 2
 
@@ -34,8 +34,8 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          docker build -t bocies/$IMAGE_NAME:${{ steps.get-version.outputs.VERSION }} -f Dockerfile .
+          docker build -t bcovies/$IMAGE_NAME:${{ steps.get-version.outputs.VERSION }} -f Dockerfile .
 
       - name: Push Docker Image
         run: |
-          docker push  bocies/$IMAGE_NAME:${{ steps.get-version.outputs.VERSION }}
+          docker push  bcovies/$IMAGE_NAME:${{ steps.get-version.outputs.VERSION }}
