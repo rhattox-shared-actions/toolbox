@@ -9,7 +9,7 @@ on:
       - .github/workflows/**
 
 env:
-  IMAGE_NAME: "toolbox"
+  IMAGE_NAME: "helm-toolbox"
   APP_PATH: "./helm-toolbox"
 jobs:
   build-and-deploy:

@@ -9,7 +9,7 @@ on:
       - .github/workflows/**
 
 env:
-  IMAGE_NAME: "toolbox"
+  IMAGE_NAME: "debian-toolbox"
   APP_PATH: "./debian-toolbox"
 jobs:
   build-and-deploy:
