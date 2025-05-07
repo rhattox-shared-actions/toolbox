@@ -5,11 +5,9 @@ on:
     branches:
       - main
       - feature/dev
-    paths-ignore:
-      - .github/workflows/**
     paths:
       - debian-toolbox/**
-      
+
 env:
   IMAGE_NAME: "debian-toolbox"
   APP_PATH: "./debian-toolbox"
