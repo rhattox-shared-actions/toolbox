@@ -7,7 +7,9 @@ on:
       - feature/dev
     paths-ignore:
       - .github/workflows/**
-
+    paths:
+      - helm-toolbox/**
+      
 env:
   IMAGE_NAME: "helm-toolbox"
   APP_PATH: "./helm-toolbox"
