@@ -1,4 +1,4 @@
-name: Build Slim Docker Image For Rhattox Workflows
+name: Helm - Build Slim Docker Image For Rhattox Workflows
 
 on:
   push:
